@@ -30,4 +30,4 @@ for symbol in tqdm(symbols):
     df = pd.DataFrame(result, columns=data_frame_columns)
     df['Open time'] = pd.to_datetime(df['Open time'], unit='ms')
     df['Close time'] = pd.to_datetime(df['Close time'], unit='ms')
-    df.to_csv(f'pairs_data/{symbol}.csv')
+    df.to_csv(f'data/{symbol}.csv')
